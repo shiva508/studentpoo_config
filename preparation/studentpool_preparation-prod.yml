@@ -1,0 +1,14 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: studentpool_preparation
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/shiva_508
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
