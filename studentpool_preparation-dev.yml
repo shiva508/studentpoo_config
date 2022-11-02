@@ -10,5 +10,5 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/shiva
     username: root
-    password: "{cipher}AQCa4Pr5D5XBI8EScRL2be4x+HWL/EHL/E8+n5OKzCxFfmh7f8h0Q+VNPBZ55PODNU6Tpsst+EyKTTawKaeIy/SwgSdtjRQdatJDKe5gizERWSrP9UtFt3/gGrrFWxYRl5xzls//iSXQrYIBZ0yMOEFIWbsfUiJts823V4oagrk0Cpuq5l1muRk70kybqDuC0TXYWRL7ZJ/qnQqiwUE/kGFUXwMCPM1FLE2XAhL3auQvoLWRrHfROYEQOIk1CQiqaXOJQMJnTeHxCVH95uMVRZ5CpS0CU4JFExaVZoRYmh0M0n5ihbwoBFqlOFSlfKePZhGV3BKETpnQJRyGQxJgSWveWd4vyuhVkjG+f34O7ullxlf4Cl2G3ljmp5uuIWlZ/4w"
+    password: "{cipher}AQCa4Pr5D5XBI8EScRL2be4x+HWL/EHL/E8+n5OKzCxFfmh7f8h0Q+VNPBZ55PODNU6Tpsst+EyKTTawKaeIy/SwgSdtjRQdatJDKe5gizERWSrP9UtFt3/gGrrFWxYRl5xzls//iSXQrYIBZ0yMOEFIWbsfUiJts823V4oagrk0Cpuq5l1muRk70kybqDuC0TXYWRL7ZJ/qnQqiwUE/kGFUXwMCPM1FLE2XAhL3auQvoLWRrHfROYEQOIk1CQiqaXOJQMJnTeHxCVH95uMVRZ5CpS0CU4JFExaVZoRYmh0M0n5ihbwoBFqlOFSlfKePZhGV3BKETpnQJRyGQxJgSWveWd4vyuhVkjG+f34O7ullxlf4Cl2G3ljmp5uuIW"
     driver-class-name: com.mysql.cj.jdbc.Driver
