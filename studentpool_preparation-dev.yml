@@ -8,7 +8,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/shiva
+    url: jdbc:mysql://localhost:3306/shiva_508
     username: root
     password: "{cipher}AQAOCkYKJhO0HRqQ7gYuiuYnySzzcN7WvoJNR1ULhB239GAMIKiTLDW5HClaPzxk5GonvPkqEBNZ8xSe8rhXIR4ZX0zXmreTVnNzsElVIjnG9//al8kRKjUkeCAt30wzc4xf8onvbMSrN1GuRQc16+efbEYAwub8Jjwbo1WzVO/jpB5++Zpt8hz4AMjP+nKe0K9CQdTc54fnGholkBVUP7akzJ4zIISFG4Gm+IsPMO11xZON5h+Bz0h5w5tWMAYn7ylGQg25mgkbnkcH+8i2Rqioyn9LQbYDFpUQxnUuTfxTdgP1tyhrBiEgMkqoSQPaM0QbRBsg4j0OIgBrpO5qDbhDAs5WTwS5KOBdqnoP8JDxFj7N5eSFaftWmXvH9XYAwCM="
     driver-class-name: com.mysql.cj.jdbc.Driver
