@@ -1,18 +1,25 @@
 twitter-to-kafka-service:
   twitter-keywords:
     - Java
-    - Microservices
-    - Kafka
+    - Microservice
+    - Spring
+    - kafka
     - Elasticsearch
-  welcome-message: Hello microservices!
+    - Hyderabad
+
+  enable-twitter4j-tweets: true
+  enable-v2-tweets: false
   enable-mock-tweets: false
   mock-min-tweet-length: 5
   mock-max-tweet-length: 15
   mock-sleep-ms: 10000
+  twitter-v2-base-url: https://api.twitter.com/2/tweets/search/stream?tweet.fields=created_at&expansions=author_id
+  twitter-v2-rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
+  twitter-v2-bearer-token: AAAAAAAAAAAAAAAAAAAAAAn0VgEAAAAAf5B5cRF3V2dcC4o3u3%2B6LlGQeyE%3D6O6Fr7NlWwpPN9egSKBbMUh9kh446r1B0yTql4aTEwZhJHLIUI
 
 retry-config:
   initial-interval-ms: 1000
-  max-interval-ms: 10000
+  max-interval-ms: 60000
   multiplier: 2.0
   maxAttempts: 3
   sleep-time-ms: 2000
@@ -31,9 +38,25 @@ kafka-producer-config:
   key-serializer-class: org.apache.kafka.common.serialization.LongSerializer
   value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
   compression-type: snappy
-  acks: all
+  message-acknowledge: all
   batch-size: 16384
   batch-size-boost-factor: 100
   linger-ms: 5
   request-timeout-ms: 60000
   retry-count: 5
+
+#LOGINGIN CONFIG
+logging:
+  level:
+    root: info
+    com.pool: info
+  file:
+    name: twittertokafkaservice.log
+    total-size-cap: 10GB
+    max-size: 1MB
+    max-history: 10
+    path: /log/twittertokafkaservice.log
+  pattern:
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+    rolling-file-name: /log/history/%d{yyyy-MM}twittertokafkaservice.log
