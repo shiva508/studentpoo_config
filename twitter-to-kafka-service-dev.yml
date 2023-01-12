@@ -1,10 +1,10 @@
 twitter-to-kafka-service:
   twitter-keywords:
-    - Java
-    - Microservice
-    - Spring
-    - kafka
-    - Elasticsearch
+    #- Java
+    #- Microservice
+    #- Spring
+    #- kafka
+    #- Elasticsearch
     - Hyderabad
 
   enable-twitter4j-tweets: true
