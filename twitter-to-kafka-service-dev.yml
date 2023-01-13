@@ -44,19 +44,3 @@ kafka-producer-config:
   linger-ms: 5
   request-timeout-ms: 60000
   retry-count: 5
-
-#LOGINGIN CONFIG
-logging:
-  level:
-    root: info
-    com.pool: info
-  file:
-    name: twittertokafkaservice.log
-    total-size-cap: 10GB
-    max-size: 1MB
-    max-history: 10
-    path: /log/twittertokafkaservice.log
-  pattern:
-    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
-    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
-    rolling-file-name: /log/history/%d{yyyy-MM}twittertokafkaservice.log
