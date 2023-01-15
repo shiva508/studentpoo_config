@@ -1,6 +1,11 @@
 spring:
   application:
     name: twitter-to-kafka-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: batman
+      password: ENC(C47Kw/jpPKoujE3nyjClDV11ZhVr0uM5oLy4MD9G240XngBX5oiUh3JaWizJaizF)
 twitter-to-kafka-service:
   twitter-keywords:
     #- Java
