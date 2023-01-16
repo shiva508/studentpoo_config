@@ -1,3 +1,5 @@
+server:
+  port: 8181
 spring:
   application:
     name: twitter-to-kafka-service
@@ -5,7 +7,7 @@ spring:
     config:
       uri: http://localhost:8888
       username: batman
-      password: ENC(C47Kw/jpPKoujE3nyjClDV11ZhVr0uM5oLy4MD9G240XngBX5oiUh3JaWizJaizF)
+      password: "{cipher}AQDLGp184moHYTXcZtAjaLmZY8Ymuq0bNE60z/cPArzjD8S1RRMS2M7RUx5mhnwPQqtW9muil9X7BB4kKFJwAGPPSpVL/lazijNyJctE/d2GLbISDTOHr9fChxK43ivhVGt+f9j7IxXk61U5oZCEHi2EE41ruT98mVcTp21R+cSwCSBhfr4T8HPHn41APFSkQrPzYTYPfS+AA73uUYCct8B0iinxv/O/1zTEWm2uGmDEGMaDMaueTqHZ8VSTEJlx0qdyfxdkNXX3IGDQS8D50cP/xcaLR1rhcswIs+hNhlJ5lpGxkDH6BFow79VG0fYTYlZJQTQzaAzJI8Nv6tcL6cBdoV+BWdqwJ3kWo6bbDuOY+LML9AvWjC+mc6hlRAatJsA="
 twitter-to-kafka-service:
   twitter-keywords:
     #- Java
@@ -54,8 +56,15 @@ kafka-producer-config:
   request-timeout-ms: 60000
   retry-count: 5
 
-jasypt:
-  encryptor:
-    password: Demo_Pwd!2020
-    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
-    algorithm: PBEWithHMACSHA512AndAES_256
+#jasypt:
+#  encryptor:
+#    password: Demo_Pwd!2020
+#    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
+#    algorithm: PBEWithHMACSHA512AndAES_256
+
+encrypt:
+  keyStore:
+    location: classpath:/studentpool.jks
+    password: kousarmd
+    alias: studentpool
+    secret: kousarmd
