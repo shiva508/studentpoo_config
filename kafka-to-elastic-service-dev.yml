@@ -2,7 +2,7 @@ server:
   port: 8182
 spring:
   application:
-    name: twitter-to-kafka-service
+    name: kafka-to-elastic-service
 
 kafka-config:
   bootstrap-servers: localhost:19092, localhost:29092, localhost:39092
