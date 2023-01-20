@@ -11,7 +11,7 @@ twitter-to-kafka-service:
     #- kafka
     #- Elasticsearch
     # Hyderabad
-    - BlockbusterWaltairVeerayya
+    - Hyderabad
 
   enable-twitter4j-tweets: true
   enable-v2-tweets: false
