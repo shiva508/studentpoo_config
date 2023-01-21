@@ -44,3 +44,10 @@ elastic-config:
   connect-timeout-ms: 5000
   socket-timeout-ms: 30000
   is-repository: true
+
+encrypt:
+  keyStore:
+    location: classpath:/studentpool.jks
+    password: kousarmd
+    alias: studentpool
+    secret: kousarmd
