@@ -32,9 +32,9 @@ kafka-consumer-config:
 
 retry-config:
   initial-interval-ms: 1000
-  max-interval-ms: 10000
+  max-interval-ms: 60000
   multiplier: 2.0
-  maxAttempts: 3
+  maxAttempts: 4
   sleep-time-ms: 2000
 
 elastic-config:
