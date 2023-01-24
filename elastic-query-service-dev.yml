@@ -17,3 +17,8 @@ elastic-config:
   connection-url: http://localhost:9200
   connect-timeout-ms: 5000
   socket-timeout-ms: 30000
+
+user-config:
+  username: shiva
+  password: "{cipher}AQChzXuuqOAEEGenJWcFI/LZ3sYhlIKkYzrDOMAYWdD1biKwpUpeH0xD02y1g9AO24jg8zU8OEyqLoCpV0w9OYjgMyxrV6aqUQGZUI6mW/rfmWBz8yT+6cZPHy6/Q1ekKpg3Nh0XVjowQiUiATkLj5ocygWfijp282MvTVcFc0uAIdNe7FoHqEMlJvihfUmwha6s61vEmT7BhcGcjSbnwBn2/B+hW495GTxSrMK+am9YiviC0WSa4c9/npmRiiB5jy5fbONclC8aDb6ocNLtQcfLrSnLNt0ZGL0d8QyzdyPZaqgFgTBKbUGwu6GNX5vnLjYjzpy+uHiQoNi1T8PN/SMgTSBoYxA8NMmcJaES99keMiqUHCSo4lKoYJS15jMtOVc="
+  role: USER
