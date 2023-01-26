@@ -5,13 +5,16 @@ spring:
     name: twitter-to-kafka-service
 twitter-to-kafka-service:
   twitter-keywords:
-    #- Java
-    #- Microservice
-    #- Spring
-    #- kafka
-    #- Elasticsearch
+    - Java
+    - Microservice
+    - Spring
+    - kafka
+    - Elasticsearch
     # Hyderabad
     - Hyderabad
+    - Elon Musk
+    - AWS
+    - React JS
 
   enable-twitter4j-tweets: true
   enable-v2-tweets: false
