@@ -1,0 +1,23 @@
+server:
+  port: 8184
+
+spring:
+  application:
+    name: elastic-query-web-client
+
+elastic-query-web-client:
+  webclient:
+    connect-timeout-ms: 10000
+    read-timeout-ms: 10000
+    write-timeout-ms: 10000
+    max-in-memory-size: 10485760 # 10MB
+    content-type: "application/vnd.api.v1+json"
+    accept-type: "application/vnd.api.v1+json"
+    base-url: "http://elastic-query-service/elastic-query-service/documents"
+thymeleaf:
+  cache: false
+
+user-config:
+  username: shiva
+  password: "{cipher}AQChzXuuqOAEEGenJWcFI/LZ3sYhlIKkYzrDOMAYWdD1biKwpUpeH0xD02y1g9AO24jg8zU8OEyqLoCpV0w9OYjgMyxrV6aqUQGZUI6mW/rfmWBz8yT+6cZPHy6/Q1ekKpg3Nh0XVjowQiUiATkLj5ocygWfijp282MvTVcFc0uAIdNe7FoHqEMlJvihfUmwha6s61vEmT7BhcGcjSbnwBn2/B+hW495GTxSrMK+am9YiviC0WSa4c9/npmRiiB5jy5fbONclC8aDb6ocNLtQcfLrSnLNt0ZGL0d8QyzdyPZaqgFgTBKbUGwu6GNX5vnLjYjzpy+uHiQoNi1T8PN/SMgTSBoYxA8NMmcJaES99keMiqUHCSo4lKoYJS15jMtOVc="
+  role: USER
