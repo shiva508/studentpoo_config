@@ -1,8 +1,18 @@
 server:
-  port: 8182
+  port: 8183
 spring:
   application:
     name: reactive-elastic-query-service
+  webflux:
+    base-path: /reactive-elastic-query-service
+  codec:
+    max-in-memory-size: 25MB
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          max-in-memory-size: 25MB
+
 elastic-query-service:
   backPressure-delay-ms: 500
 
@@ -27,17 +37,3 @@ kafka-config:
   max-interval-ms: 10000
   retry-multiplier: 2.0
   admin-retry-max: 1
-
-server:
-  port: 8183
-
-spring:
-  webflux:
-    base-path: /reactive-elastic-query-service
-  codec:
-    max-in-memory-size: 25MB
-  data:
-    elasticsearch:
-      client:
-        reactive:
-          max-in-memory-size: 25MB
