@@ -47,6 +47,6 @@ kafka-streams-config:
 word-count-streams-config:
   application-id: wordcount-streams-application
   input-topic-name: word-count-input
-  output-topic-name: word-count-input
+  output-topic-name: word-count-out
   state-file-location: ${HOME}/wordcount-streaming-state
   word-count-store-name: wordcount-count-store
