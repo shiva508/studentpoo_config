@@ -35,7 +35,7 @@ kafka-config:
     - twitter-topic
     - twitter-analytics-topic
     - word-count-input
-    - word-count-input
+    - word-count-output
 
 kafka-streams-config:
   application-id: kafka-streams-application
