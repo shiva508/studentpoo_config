@@ -36,6 +36,8 @@ kafka-config:
     - twitter-analytics-topic
     - word-count-input
     - word-count-output
+    - color-count-input
+    - color-count-output
 
 kafka-streams-config:
   application-id: kafka-streams-application
@@ -47,6 +49,13 @@ kafka-streams-config:
 word-count-streams-config:
   application-id: wordcount-streams-application
   input-topic-name: word-count-input
-  output-topic-name: word-count-input
+  output-topic-name: word-count-output
   state-file-location: ${HOME}/wordcount-streaming-state
   word-count-store-name: wordcount-count-store
+
+color-count-streams-config:
+  application-id: colorcount-streams-application
+  input-topic-name: color-count-input
+  output-topic-name: color-count-output
+  state-file-location: ${HOME}/colorcount-streaming-state
+  color-count-store-name: colorcount-count-store

@@ -43,6 +43,8 @@ kafka-config:
     - twitter-analytics-topic
     - word-count-input
     - word-count-output
+    - color-count-input
+    - color-count-output
   num-of-partitions: 3
   replication-factor: 3
 
