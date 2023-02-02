@@ -59,4 +59,4 @@ color-count-streams-config:
   output-topic-name: color-count-output
   state-file-location: ${HOME}/colorcount-streaming-state
   color-count-store-name: colorcount-count-store
-  buffer-topic-name: - color-count-buffer
+  buffer-topic-name: color-count-buffer
