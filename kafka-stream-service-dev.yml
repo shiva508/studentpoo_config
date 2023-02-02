@@ -38,7 +38,7 @@ kafka-config:
     - word-count-output
     - color-count-input
     - color-count-output
-
+    - color-count-buffer
 kafka-streams-config:
   application-id: kafka-streams-application
   input-topic-name: twitter-topic
@@ -59,3 +59,4 @@ color-count-streams-config:
   output-topic-name: color-count-output
   state-file-location: ${HOME}/colorcount-streaming-state
   color-count-store-name: colorcount-count-store
+  buffer-topic-name: - color-count-buffer
