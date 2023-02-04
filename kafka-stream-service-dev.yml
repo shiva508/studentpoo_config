@@ -48,10 +48,10 @@ kafka-cleanup-policy-config:
   num-of-partitions: 1
   replication-factor: 1
   cleanup-policy-config:
-    cleanup-policy: compact
-    min-cleanable-dirty-ratio: 0.005
-    segment-ms: 10000
-    retention-bytes: -1
+    cleanup.policy: compact
+    min.cleanable.dirty.ratio: 0.005
+    segment.ms: 10000
+    retention.bytes: -1
 kafka-streams-config:
   application-id: kafka-streams-application
   input-topic-name: twitter-topic
