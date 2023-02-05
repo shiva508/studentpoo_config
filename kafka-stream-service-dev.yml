@@ -87,3 +87,11 @@ color-count-streams-config:
   state-file-location: ${HOME}/colorcount-streaming-state
   color-count-store-name: colorcount-count-store
   buffer-topic-name: color-count-buffer
+
+bank-account-streams-config:
+  application-id: bank-account-streams-application
+  input-topic-name: bank-account-input
+  output-topic-name: bank-account-output
+  state-file-location: ${HOME}/bank-account-streaming-state
+  color-count-store-name: bank-account-store
+  buffer-topic-name: bank-account-buffer
