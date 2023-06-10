@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: dear_comared_tutorial
-  config:
-    import: "configserver:"
   cloud:
     config:
       uri: http://localhost:8888
