@@ -1,8 +1,10 @@
 server:
-  port: 8090
+  port: 8091
 spring:
   application:
-    name: dear_comared_user_profile
+    name: dear_comared_tutorial
+  config:
+    import: "configserver:"
   cloud:
     config:
       uri: http://localhost:8888
@@ -13,13 +15,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-      
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
-
-
-user-profile:
-  user-name: shiva
-  password: shiva
-
