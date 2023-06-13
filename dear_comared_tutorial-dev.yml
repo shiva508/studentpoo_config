@@ -21,3 +21,9 @@ user-profile:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+resilience4j:
+  retry:
+    instances:
+      api-retry:
+        maxAttempts: 6
