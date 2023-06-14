@@ -25,5 +25,7 @@ springdoc:
 resilience4j:
   retry:
     instances:
-      api-retry:
+      tutorial-api-retry:
         maxAttempts: 6
+        enableExponentialBackoff: true
+        waitDuration: 1s
