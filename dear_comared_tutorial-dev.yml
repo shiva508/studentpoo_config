@@ -29,9 +29,9 @@ resilience4j.retry:
       enableExponentialBackoff: true
       waitDuration: 30s
     user-api-retry:
-      maxAttempts: 6
+      maxAttempts: 2
       enableExponentialBackoff: true
-      waitDuration: 30s 
+      waitDuration: 5s 
         
 management:
   endpoints:
