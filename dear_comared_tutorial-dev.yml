@@ -29,3 +29,17 @@ resilience4j:
         maxAttempts: 6
         enableExponentialBackoff: true
         waitDuration: 1s
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    circuitbreakers:
+      enabled: 'true'
+    ratelimiters:
+      enabled: 'true'
+  endpoint:
+    health:
+      show-details: always
