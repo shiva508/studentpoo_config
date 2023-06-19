@@ -39,7 +39,7 @@ resilience4j.retry:
 # CIRCUIT Breaker
 resilience4j.circuitbreaker:
   instances:
-    greetingClientCB:
+    user-circuit-breaker:
       registerHealthIndicator: true
       slidingWindowSize: 60
       slidingWindowType: TIME_BASED
