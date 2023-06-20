@@ -52,6 +52,25 @@ resilience4j.circuitbreaker:
 #      ignoreExceptions:
 #        - com.jsession4d.feignclient.BusinessException
 
+# Rate Limiter
+resilience4j.ratelimiter:
+  instances:
+    user-rate-limiter:
+      limitForPeriod: 10
+      limitRefreshPeriod: 1s
+      timeoutDuration: 0
+      registerHealthIndicator: true
+      eventConsumerBufferSize: 100
+
+# Bulk Head
+resilience4j.thread-pool-bulkhead:
+  instances:
+    user-bulk-head:
+      maxThreadPoolSize: 1
+      coreThreadPoolSize: 1
+      queueCapacity: 1
+      writableStackTraceEnabled: true
+
 management:
   endpoints:
     web:
