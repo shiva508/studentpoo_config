@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: dear_comared_discovery
   client:
     registerWithEureka: false
     fetchRegistry: false
