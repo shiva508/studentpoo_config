@@ -30,6 +30,8 @@ management:
       exposure:
         include: "*"
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://dear_comared_discovery:8761/eureka/
