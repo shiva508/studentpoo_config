@@ -1,0 +1,32 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: dear_comared_cloud_gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: dear_comared_tutorial
+          uri: http://localhost:8091
+          predicates:
+            - Path=/tutorials/**
+          filters:
+            - AddRequestHeader=X-Welcome,Hi
+            - AddResponseHeader=X-Welcome,bye
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+  main:
+    web-application-type: reactive
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dear_comared_discovery:8761/eureka/

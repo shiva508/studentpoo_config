@@ -11,7 +11,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://dear_comared_discovery:8761/eureka
+      defaultZone: http://dear_comared_dicovery:8761/eureka
 
 springdoc:
   swagger-ui:
