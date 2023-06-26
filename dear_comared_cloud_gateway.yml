@@ -9,9 +9,11 @@ spring:
         locator:
           enabled: true
           lowerCaseServiceId: true
+      globalcors:
+        add-to-simple-url-handler-mapping: true
       routes:
         - id: dear_comared_tutorial
-          uri: lb://dear_comared_tutorial
+          uri: lb://DEAR_COMARED_TUTORIAL
           #          uri: http://localhost:8091
           predicates:
             - Path=/tutorials/**
@@ -25,8 +27,6 @@ spring:
           filters:
             - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
 
-      globalcors:
-        add-to-simple-url-handler-mapping: true
   main:
     web-application-type: reactive
 management:
