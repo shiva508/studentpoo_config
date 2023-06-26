@@ -30,3 +30,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: dear_comared_tutorial
+        url: /v3/api-docs/dear_comared_tutorial
