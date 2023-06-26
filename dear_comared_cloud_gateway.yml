@@ -11,7 +11,8 @@ spring:
           lower-case-service-id: true
       routes:
         - id: dear_comared_tutorial
-          uri: http://localhost:8091
+          uri: lb://dear_comared_tutorial
+          #          uri: http://localhost:8091
           predicates:
             - Path=/tutorials/**
           filters:
@@ -34,5 +35,5 @@ eureka:
 springdoc:
   swagger-ui:
     urls:
-      - name: dear_comared_tutorial
-        url: /v3/api-docs/dear_comared_tutorial
+      - name: tutorials
+        url: /v3/api-docs/tutorials
