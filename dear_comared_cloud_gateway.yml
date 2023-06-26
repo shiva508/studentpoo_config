@@ -10,7 +10,7 @@ spring:
           enabled: true
           lowerCaseServiceId: true
       globalcors:
-        add-to-simple-url-handler-mapping: true
+        addToSimpleUrlHandlerMapping: true
       routes:
         - id: dear_comared_tutorial
           uri: lb://DEAR_COMARED_TUTORIAL
