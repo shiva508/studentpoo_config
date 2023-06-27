@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: dear_comared_cloud_gateway
+    name: dear-comrade-cloud-gateway
   cloud:
     gateway:
       discovery:

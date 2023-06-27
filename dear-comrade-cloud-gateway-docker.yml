@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: dear_comared_cloud_gateway
+    name: dear-comrade-cloud-gateway
   output:
     ansi:
       enabled: always
@@ -34,4 +34,4 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://dear_comared_discovery:8761/eureka/
+      defaultZone: http://dear-comrade-discovery:8761/eureka/

@@ -2,7 +2,7 @@ server:
   port: 8090
 spring:
   application:
-    name: dear_comared_user_profile
+    name: dear-comrade-user-profile
   cloud:
     config:
       uri: http://localhost:8888
@@ -11,7 +11,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://dear_comared_dicovery:8761/eureka
+      defaultZone: http://dear-comrade-discovery:8761/eureka
 
 springdoc:
   swagger-ui:

@@ -2,10 +2,8 @@ server:
   port: 8761
 
 eureka:
-  #  instance:
-  #    hostname: localhost
   instance:
-    prefer-ip-address: true
+    hostname: dear-comrade-discovery
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -14,7 +12,7 @@ eureka:
 
 spring:
   application:
-    name: dear_comared_discovery
+    name: dear-comrade-discovery
   output:
     ansi:
       enabled: always
