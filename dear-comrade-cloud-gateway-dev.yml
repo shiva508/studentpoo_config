@@ -11,22 +11,20 @@ spring:
           lowerCaseServiceId: true
       globalcors:
         addToSimpleUrlHandlerMapping: true
-  #      routes:
-  #        - id: dear_comared_tutorial
-  #          uri: lb://DEAR_COMARED_TUTORIAL
-  #          #          uri: http://localhost:8091
-  #          predicates:
-  #            - Path=/tutorials/**
-  #          filters:
-  #            - AddRequestHeader=X-Welcome,Hi
-  #            - AddResponseHeader=X-Welcome,bye
-  #        - id: openapi
-  #          uri: http://localhost:${server.port}
-  #          predicates:
-  #            - Path=/v3/api-docs/**
-  #          filters:
-  #            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
-  #
+        routes:
+          - id: dear-comrade-tutorial
+            uri: lb://dear-comrade-tutorial
+            predicates:
+              - Path=/tutorials/**
+            filters:
+              - AddRequestHeader=X-Welcome,Hi
+              - AddResponseHeader=X-Welcome,bye
+          - id: openapi
+            uri: http://localhost:${server.port}
+            predicates:
+              - Path=/v3/api-docs/**
+            filters:
+              - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
   main:
     web-application-type: reactive
 management:
