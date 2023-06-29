@@ -17,3 +17,23 @@ springdoc:
 user-profile:
   user-name: shiva
   password: shiva
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    circuitbreakers:
+      enabled: "true"
+    ratelimiters:
+      enabled: "true"
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+    zipkin:
+      tracing:
+        endpoint: http://zipkin:9411/api/v2/spans

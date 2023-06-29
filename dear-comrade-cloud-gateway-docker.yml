@@ -24,14 +24,29 @@ spring:
         add-to-simple-url-handler-mapping: true
   main:
     web-application-type: reactive
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://dear-comrade-discovery:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    circuitbreakers:
+      enabled: "true"
+    ratelimiters:
+      enabled: "true"
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+    zipkin:
+      tracing:
+        endpoint: http://zipkin:9411/api/v2/spans
