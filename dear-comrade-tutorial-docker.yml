@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: dear-comrade-tutorial
+  output:
+    ansi:
+      enabled: always
   jackson:
     serialization:
       INDENT_OUTPUT: true
