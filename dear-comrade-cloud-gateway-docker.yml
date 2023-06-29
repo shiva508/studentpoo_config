@@ -39,3 +39,9 @@ management:
   zipkin:
     tracing:
       endpoint: http://zipkin:9411/api/v2/spans
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: tutorials
+        url: /v3/api-docs/tutorials
