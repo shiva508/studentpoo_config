@@ -78,9 +78,9 @@ management:
       enabled: "true"
     ratelimiters:
       enabled: "true"
-  endpoint:
-    health:
-      show-details: always
+  #  endpoint:
+  #    health:
+  #      show-details: always
   tracing:
     sampling:
       probability: 1.0
