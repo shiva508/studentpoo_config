@@ -3,9 +3,6 @@ server:
 spring:
   application:
     name: dear-comrade-user-profile
-  cloud:
-    config:
-      uri: http://localhost:8888
 eureka:
   client:
     register-with-eureka: true
