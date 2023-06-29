@@ -16,7 +16,7 @@ eureka:
       defaultZone: http://dear-comrade-discovery:8761/eureka/
 
 user-profile:
-  base-url: http://localhost:8090
+  base-url: http://dear-comrade-user-profile:8090
 
 springdoc:
   swagger-ui:
